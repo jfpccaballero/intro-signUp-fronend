@@ -2,12 +2,13 @@ let inputs = document.querySelectorAll("input");
 
 inputs.forEach(input => {
     let elem = document.createElement("div");
-    elem.id = "error";
+    elem.className = "error";
     elem.style.display = "none";
     input.after(elem);
     let iconError = document.createElement("img");
-    iconError.id = "error-icon";
+    iconError.className = "error-icon";
     iconError.src = "images/icon-error.svg";
+    iconError.alt = "error-img";
     iconError.style.display = "none";
     input.after(iconError);
 

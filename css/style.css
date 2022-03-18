@@ -38,18 +38,6 @@ input {
     color: hsl(248, 32%, 49%);
 }
 input:focus { outline-color: hsl(248, 32%, 49%);}
-#error {
-    margin: 0;
-    text-align: right;
-    color: red;
-    font-size: 12px;
-    font-style: italic;
-}
-#error-icon {
-    position: absolute;
-    align-self: center;
-    right: 1rem;
-}
 ::placeholder { color: hsl(248, 32%, 49%); font-weight: 500;}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -73,6 +61,18 @@ input:focus { outline-color: hsl(248, 32%, 49%);}
     grid-template-columns: 50% auto;
     align-items: center;
     padding: 0 10%;
+}
+.error {
+    margin: 0;
+    text-align: right;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+.error-icon {
+    position: absolute;
+    align-self: center;
+    right: 1rem;
 }
 .form-container {
     background-color: #fff;
