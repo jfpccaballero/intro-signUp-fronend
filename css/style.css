@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap');
+* {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+body, html {height: 100%;}
+body {
+    margin: 0;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 90% auto;
+    align-items: center;
+}
+button {
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 3px solid hsla(154, 51%, 34%, 0.678);
+    font-size: 16px;
+    font-weight: 500;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+button, input, .blue-container{
+    box-sizing:border-box;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+h1 { font-size: 48px;}
+input {
+    border: 1px solid hsl(246, 25%, 77%);
+    color: hsl(248, 32%, 49%);
+}
+input:focus { outline-color: hsl(248, 32%, 49%);}
+#error {
+    margin: 0;
+    text-align: right;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+#error-icon {
+    position: absolute;
+    align-self: center;
+    right: 1rem;
+}
+::placeholder { color: hsl(248, 32%, 49%); font-weight: 500;}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.blue-container {
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.blue-container, .form-container { 
+    border-radius: 10px;
+    box-shadow: 0px 6px hsla(249, 10%, 26%, 0.397) ;
+}
+.blue-container p { font-size: 14px; font-weight: 300; margin: 0;}
+.blue-container span { font-weight: 600;}
+.column { padding: 2rem; }
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center;
+    padding: 0 10%;
+}
+.form-container {
+    background-color: #fff;
+    display: grid;
+    padding: 2rem;
+}
+.input-container { position: relative; display: grid;}
+.invalid { border: 2px solid red;}
+.terms { 
+    padding: 0 1rem;
+    text-align: center;
+}
+.terms p { color: hsl(246, 25%, 77%); font-size: 12px;}
+.terms span { color: hsl(0, 100%, 74%); font-weight: 600;}
+
+@media screen and (max-width: 1200px) {
+    .container { padding: 0 5%; }
+}
+@media screen and (max-width: 800px) {
+    body, html {height: auto;}
+    body {
+        background-image: url(../images/bg-intro-mobile.png);
+        background-size: cover;
+        display: block;
+    }
+    .container {
+        grid-template-columns: auto;
+        padding: 4rem 0;
+    }
+    .left {text-align: center;}
+}
+@media screen and (max-width: 500px) {
+    h1 {font-size: 32px;}
+}
+@media screen and (max-height: 700px) {
+    body, html {height: auto;}
+}
